@@ -8,6 +8,7 @@ A responsive, static academic homepage for GitHub Pages.
 - `style.css`: desktop and mobile presentation.
 - `script.js`: BibTeX citation dialog and copy interaction.
 - `assets/`: portrait, published research figures, project hardware image and public CV.
+- `tools/build_cv.py`: optional PDF regeneration source (Python with `reportlab` and `pypdf`). Run from any directory; it writes the public CV in `assets/`.
 
 No build step, framework, analytics or third-party scripts are required. Serve the repository root to preview it. GitHub Pages serves `main` from `/`.
 
