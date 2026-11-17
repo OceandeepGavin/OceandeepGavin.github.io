@@ -25,12 +25,13 @@ p('<b>Defect-adaptive landmark detection in pelvis CT images via personalized st
 p('RESEARCH EXPERIENCE','SectionCV')
 p('<b>Orthopaedic surgical navigation</b><br/>Algorithm engineering, functional integration, prototype development, and performance validation.')
 p('ACADEMIC ACTIVITIES','SectionCV')
-p('<b>2026:</b> Research presentation, ChinaVR Outstanding Doctoral Student Forum.')
+p('<b>2026:</b> Research presentation, ChinaVR Outstanding Doctoral Student Forum.<br/><b>September 2024:</b> Participant, Medical Augmented Reality Summer School (MARSS), Suzhou, China. September 1-7; endorsed by the MICCAI Society.')
 doc=SimpleDocTemplate(str(root/'assets/Xirui_Zhao_CV.pdf'),pagesize=(595.28,841.89),leftMargin=46,rightMargin=46,topMargin=39,bottomMargin=35,title='Xirui Zhao - Curriculum Vitae',author='Xirui Zhao')
 def footer(c,d):
  c.setFont('Helvetica',8);c.setFillColor(HexColor('#52645f'));c.drawString(46,23,'Updated November 2026');c.drawRightString(549,23,str(d.page))
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
 from pypdf import PdfReader
 r=PdfReader(root/'assets/Xirui_Zhao_CV.pdf');print('CV pages:',len(r.pages));assert len(r.pages)==1
+
 
 
